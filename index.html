@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <!-- Tailwind CSS CDN - ensure this is loaded for the classes to work -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Custom styles for Inter font and smooth scrolling */
+      body {
+        font-family: "Inter", sans-serif;
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-950 text-gray-50">
+    <!-- Header -->
+    <header class="bg-gray-900 shadow-lg rounded-b-lg">
+      <div
+        class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-3xl font-extrabold text-teal-400">Sai Surya Pranav</h1>
+        <nav class="space-x-6 hidden md:flex">
+          <a
+            href="#about"
+            class="text-gray-100 hover:text-teal-400 transition duration-300 ease-in-out font-medium"
+            >About</a
+          >
+          <a
+            href="#projects"
+            class="text-gray-100 hover:text-teal-400 transition duration-300 ease-in-out font-medium"
+            >Projects</a
+          >
+          <a
+            href="#resume"
+            class="text-gray-100 hover:text-teal-400 transition duration-300 ease-in-out font-medium"
+            >Resume</a
+          >
+          <a
+            href="#contact"
+            class="text-gray-100 hover:text-teal-400 transition duration-300 ease-in-out font-medium"
+            >Contact</a
+          >
+        </nav>
+        <!-- Mobile Menu Button (Hamburger) -->
+        <button class="md:hidden text-gray-100 focus:outline-none">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gray-900 py-20 text-center shadow-inner rounded-lg mt-8">
+      <h2 class="text-5xl font-extrabold mb-4 text-white animate-fade-in-down">
+        Hello, I'm Sai
+      </h2>
+      <p class="text-xl text-gray-100 animate-fade-in-up">
+        A passionate Web Developer crafting beautiful and functional digital
+        experiences.
+      </p>
+    </section>
+
+    <!-- About -->
+    <section
+      id="about"
+      class="max-w-4xl mx-auto py-16 px-4 bg-gray-900 rounded-lg shadow-xl mt-12"
+    >
+      <h2
+        class="text-4xl font-bold mb-6 text-teal-400 border-b-2 border-teal-400 pb-2"
+      >
+        About Me
+      </h2>
+      <p class="text-lg leading-relaxed text-gray-100">
+        I’m a dedicated web developer with a strong foundation in HTML, CSS,
+        JavaScript, and modern front-end frameworks like React. My expertise
+        lies in building responsive, user-friendly interfaces that provide
+        seamless experiences across various devices. I thrive on solving complex
+        problems, optimizing performance, and continuously learning new
+        technologies to stay at the forefront of web development. I am
+        passionate about creating clean, efficient, and visually appealing web
+        applications.
+      </p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="bg-gray-950 py-16">
+      <div class="max-w-4xl mx-auto px-4">
+        <h2
+          class="text-4xl font-bold mb-10 text-teal-400 text-center border-b-2 border-teal-400 pb-2"
+        >
+          My Projects
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Project 1 -->
+          <div
+            class="bg-gray-900 p-6 shadow-xl rounded-lg transform hover:scale-105 transition duration-300 ease-in-out border border-blue-800"
+          >
+            <h3 class="font-extrabold text-2xl mb-2 text-teal-300">
+              Portfolio Website
+            </h3>
+            <p class="text-base text-gray-100 mb-4">
+              A personal website meticulously crafted to showcase my skills and
+              projects, built with modern web technologies and styled using
+              Tailwind CSS for a sleek, responsive design.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="bg-teal-700 text-teal-100 text-xs font-semibold px-2.5 py-0.5 rounded-full"
+                >HTML</span
+              >
+              <span
+                class="bg-teal-700 text-teal-100 text-xs font-semibold px-2.5 py-0.5 rounded-full"
+                >Tailwind CSS</span
+              >
+              <span
+                class="bg-teal-700 text-teal-100 text-xs font-semibold px-2.5 py-0.5 rounded-full"
+                >Responsive Design</span
+              >
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div
+            class="bg-gray-900 p-6 shadow-xl rounded-lg transform hover:scale-105 transition duration-300 ease-in-out border border-blue-800"
+          >
+            <h3 class="font-extrabold text-2xl mb-2 text-teal-300">
+              Chit-Chat App
+            </h3>
+            <p class="text-base text-gray-100 mb-4">
+              A real-time, interactive chat application designed for seamless
+              communication, leveraging the MERN stack for robust backend and
+              Socket.IO for instant messaging capabilities.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="bg-teal-700 text-teal-100 text-xs font-semibold px-2.5 py-0.5 rounded-full"
+                >MERN Stack</span
+              >
+              <span
+                class="bg-teal-700 text-teal-100 text-xs font-semibold px-2.5 py-0.5 rounded-full"
+                >Socket.IO</span
+              >
+              <span
+                class="bg-teal-700 text-teal-100 text-xs font-semibold px-2.5 py-0.5 rounded-full"
+                >Real-time</span
+              >
+            </div>
+          </div>
+          <!-- Add more projects here if needed -->
+
+          <div
+            class="bg-gray-900 p-6 shadow-xl rounded-lg transform hover:scale-105 transition duration-300 ease-in-out border border-blue-800"
+          >
+            <h3 class="font-extrabold text-2xl mb-2 text-teal-300">
+              Amusement Park Management System
+            </h3>
+            <p class="text-base text-gray-100 mb-4">
+              Designed and implemented a relational database for managing
+              customers, accounts, transactions, and loans, with an ER diagram
+              and schema normalized up to BCNF to eliminate redundancy.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="bg-teal-700 text-teal-100 text-xs font-semibold px-2.5 py-0.5 rounded-full"
+                >My SQL</span
+              >
+              <span
+                class="bg-teal-700 text-teal-100 text-xs font-semibold px-2.5 py-0.5 rounded-full"
+                >Normalisation</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section
+      id="resume"
+      class="max-w-4xl mx-auto py-16 px-4 bg-gray-900 rounded-lg shadow-xl mt-12"
+    >
+      <h2
+        class="text-4xl font-bold mb-6 text-teal-400 border-b-2 border-teal-400 pb-2"
+      >
+        My Resume
+      </h2>
+      <p class="text-lg leading-relaxed text-gray-100 mb-6">
+        You can download my full resume to learn more about my professional
+        experience, skills, and educational background.
+      </p>
+      <a
+        href="path/to/your/resume.pdf"
+        download="Sai_Surya_Pranav_Resume.pdf"
+        class="inline-block bg-teal-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-teal-700 transition duration-300 ease-in-out transform hover:scale-105"
+      >
+        Download Resume
+      </a>
+      <p class="text-sm text-gray-400 mt-4">
+        (Note: This is a placeholder link. Please replace
+        "path/to/your/resume.pdf" with the actual path to your resume file.)
+      </p>
+    </section>
+
+    <!-- Contact -->
+    <section
+      id="contact"
+      class="max-w-4xl mx-auto py-16 px-4 bg-gray-900 rounded-lg shadow-xl mt-12 mb-12"
+    >
+      <h2
+        class="text-4xl font-bold mb-6 text-teal-400 border-b-2 border-teal-400 pb-2"
+      >
+        Get in Touch
+      </h2>
+      <p class="text-lg text-gray-100 mb-4">
+        I'm always open to new opportunities and collaborations. Feel free to
+        reach out!
+      </p>
+      <p class="text-lg text-gray-100">
+        Email:
+        <a
+          href="mailto:sai@example.com"
+          class="text-teal-400 hover:underline transition duration-300 ease-in-out font-medium"
+          >saisuryapranav254@gmail.com</a
+        >
+      </p>
+      <p class="text-lg text-gray-100">
+        Linkedin:
+        <a
+          href="https://www.linkedin.com/in/sai-surya-pranav-b-936144325/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-teal-400 hover:underline transition duration-300 ease-in-out font-medium"
+        >
+          Sai Surya Pranav Biraka
+        </a>
+      </p>
+      <div class="mt-6 flex space-x-4">
+        <!-- Social Media Icons (Example) -->
+        <a
+          href="https://github.com/saipranav2504"
+          class="text-gray-100 hover:text-teal-400 transition duration-300 ease-in-out"
+        >
+          <svg
+            class="w-8 h-8"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.499.09.679-.217.679-.481 0-.237-.008-.862-.013-1.697-2.782.602-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.618.069-.606.069-.606 1.003.07 1.531 1.029 1.531 1.029.892 1.529 2.341 1.089 2.902.833.091-.647.35-1.089.636-1.338-2.22-.253-4.555-1.113-4.555-4.953 0-1.096.39-1.993 1.029-2.697-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.022A9.614 9.614 0 0112 6.865c.85.004 1.701.114 2.503.337 1.909-1.292 2.747-1.022 2.747-1.022.546 1.379.202 2.398.099 2.65.64.704 1.028 1.599 1.028 2.697 0 3.848-2.339 4.695-4.566 4.943.359.309.678.917.678 1.846 0 1.334-.012 2.41-.012 2.727 0 .266.18.577.688.48C21.137 20.188 24 16.42 24 12.017 24 6.484 19.522 2 12 2Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="bg-gray-900 py-6 mt-8 text-center text-sm text-gray-400 rounded-t-lg"
+    >
+      © 2025 Sai Surya Pranav. All rights reserved.
+    </footer>
+  </body>
+</html>
